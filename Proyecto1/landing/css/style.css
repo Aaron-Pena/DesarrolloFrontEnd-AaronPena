@@ -21,6 +21,8 @@ body {
   color: #000000;
 }
 
+/* #region HEADER*/
+
 header {
   display: flex;
   flex-direction: row;
@@ -33,6 +35,7 @@ header {
   width: 100%;
   height: 90px;
   box-shadow: 0 6px 8px rgba(0,0,0, 0.10);
+  z-index: 1;
 }
 
 #logo,
@@ -78,14 +81,17 @@ nav li:hover,
   background-color: #f5f7fa;
   border-radius: 8px;
 }
-
+/* region #END */
 section {
   scroll-margin-top:  90px;
   padding: 45px 90px;
 
   /* tmp: para visualizar secciones */
-  height: 100vh;
+  
   border: 1px dashed #34495e;
+}
+section:not(#destacados){
+  height: 100vh;
 }
 
 section > h1 {
@@ -121,6 +127,55 @@ section > h1 {
   background-color: #34495e;
   opacity: 0.9;
   padding: 3rem;
+}
+.destacados-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 60px;
+}
+.destacados-info{
+  flex: 1;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 10px 8px rgba(95,186,167,0.1%);
+  border-radius: 3px;
+}
+
+.destacados-info img{
+  max-width: 10%;
+}
+.star-rating{
+  color:gold;
+  font-size: 24px;
+}
+.clientes-comentarios {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.comentario{
+  display: flex;
+  gap:10px;
+  padding: 15px;
+  background-color: hsl(167, 40%, 85%);
+  border-radius: 20px;
+}
+.cliente img{
+  width: 40px;
+  border-radius: 50%;
+}
+.cliente-mensaje{
+  flex: 1;
+margin-bottom: 0.75rem;
+}
+.cliente-firma{
+  font-style: italic;
+  font-weight: 600;
+
 }
 
 footer {

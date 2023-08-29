@@ -12,19 +12,6 @@ function mostrarMensajeInicial() {
 
 }
 
-//
-// FUNCTION DECLARATION: forma tracional de definir funciones con palabra clave function
-//
-// function funcionNoAnonima() {
-//   return 1 + 1;
-// }
-
-
-//
-// ARROW FUNCTION: sintaxis más concisa para definir funciones,
-//    especialmente útiles cuando se trata de funciones pequeñas y anónimas
-//
-// () => 1 + 1;
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollToBottomButtom = document.getElementById('btn-ir-arriba');
